@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Features - Cosmic Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="stars-bg">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-blue-900 focus:text-white focus:z-50">
+        Skip to main content
+    </a>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">COSMIC EXPLORER</a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="solar-system.html" class="nav-link">Solar System</a>
+                    <a href="history.html" class="nav-link">History</a>
+                    <a href="space-race.html" class="nav-link">Space Race</a>
+                    <a href="modern-space.html" class="nav-link">Modern Space</a>
+                    <a href="interactive.html" class="nav-link active">Interactive</a>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <div class="container">
+                <h1 class="space-title">Interactive Features</h1>
+                <p class="space-subtitle">Engage with our interactive tools to deepen your understanding of space exploration.</p>
+            </div>
+        </section>
+
+        <section class="interactive-dashboard-section">
+            <div class="container">
+                <div class="interactive-dashboard">
+                    <h2 class="section-title">Interactive Dashboard</h2>
+                    <p class="section-subtitle">Explore space through our interactive simulations and visualizations.</p>
+                    
+                    <div class="tab-buttons">
+                        <button class="tab-button active" data-tab="satellite-tab">
+                            <span class="feature-icon">🛰️</span> Satellite Orbit Viewer
+                        </button>
+                        <button class="tab-button" data-tab="rover-tab">
+                            <span class="feature-icon">🚀</span> Mars Rover Simulator
+                        </button>
+                        <button class="tab-button" data-tab="iss-tab">
+                            <span class="feature-icon">🏢</span> ISS Virtual Tour
+                        </button>
+                        <button class="tab-button" data-tab="planets-tab">
+                            <span class="feature-icon">🌍</span> Planet Comparator
+                        </button>
+                    </div>
+                    
+                    <!-- Satellite Orbit Viewer -->
+                    <div id="satellite-tab" class="tab-content active">
+                        <h3><span class="feature-icon floating">🛰️</span> Satellite Orbit Viewer</h3>
+                        <p>Adjust the parameters to see how satellites orbit Earth at different altitudes and inclinations.</p>
+                        
+                        <div class="visual-container">
+                            <div class="earth-orbit-simulation">
+                                <div class="earth"></div>
+                                <div class="orbit-path"></div>
+                                <div class="satellite"></div>
+                                <div class="stars-small"></div>
+                                <div class="stars-medium"></div>
+                                <div class="stars-large"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="control-panel">
+                            <div class="slider-container">
+                                <label for="altitude-slider">Altitude: <span id="altitude-value">400</span> km</label>
+                                <input type="range" id="altitude-slider" class="slider" min="0" max="100" value="33">
+                                <div class="slider-labels">
+                                    <span>Low Earth Orbit: 200-1000 km</span>
+                                </div>
+                            </div>
+                            
+                            <div class="slider-container">
+                                <label for="inclination-slider">Inclination: <span id="inclination-value">45</span>°</label>
+                                <input type="range" id="inclination-slider" class="slider" min="0" max="90" value="45">
+                                <div class="slider-labels">
+                                    <span>0° = Equatorial, 90° = Polar</span>
+                                </div>
+                            </div>
+                            
+                            <div class="slider-container">
+                                <label for="speed-slider">Animation Speed: <span id="speed-value">Medium</span></label>
+                                <input type="range" id="speed-slider" class="slider" min="0" max="19" value="5">
+                                <div class="slider-labels">
+                                    <span>Slow</span>
+                                    <span>Fast</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Mars Rover Simulator -->
+                    <div id="rover-tab" class="tab-content">
+                        <h3><span class="feature-icon floating">🚀</span> Mars Rover Simulator</h3>
+                        <p>Control a virtual rover on the Martian surface. Use the directional buttons to navigate.</p>
+                        
+                        <div class="visual-container">
+                            <div class="mars-surface">
+                                <div class="rover"></div>
+                                
+                                <!-- Craters and rocks -->
+                                <div class="mars-crater" style="top: 30%; left: 20%; width: 40px; height: 40px;"></div>
+                                <div class="mars-crater" style="top: 70%; left: 80%; width: 30px; height: 30px;"></div>
+                                <div class="mars-rock" style="top: 20%; left: 70%; width: 10px; height: 10px;"></div>
+                                <div class="mars-rock" style="top: 60%; left: 30%; width: 15px; height: 15px;"></div>
+                                <div class="mars-crater" style="top: 40%; left: 50%; width: 25px; height: 25px;"></div>
+                                <div class="mars-rock" style="top: 80%; left: 40%; width: 12px; height: 8px;"></div>
+                                <div class="mars-dust"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="button-controls">
+                            <button class="control-button rover-control" data-direction="up">↑</button>
+                            <div>
+                                <button class="control-button rover-control" data-direction="left">←</button>
+                                <button class="control-button rover-control" data-direction="right">→</button>
+                            </div>
+                            <button class="control-button rover-control" data-direction="down">↓</button>
+                        </div>
+                    </div>
+                    
+                    <!-- ISS Virtual Tour -->
+                    <div id="iss-tab" class="tab-content">
+                        <h3><span class="feature-icon floating">🏢</span> ISS Virtual Tour</h3>
+                        <p>Explore the International Space Station by navigating between modules. Click on connected modules to move through the station.</p>
+                        
+                        <div class="visual-container">
+                            <div class="iss-visualization">
+                                <div class="iss-module iss-module-unity active" data-module="Unity (Node 1)">Unity</div>
+                                <div class="iss-module iss-module-zarya" data-module="Zarya (FGB)">Zarya</div>
+                                <div class="iss-module iss-module-destiny" data-module="Destiny Laboratory">Destiny</div>
+                                <div class="iss-module iss-module-tranquility" data-module="Tranquility (Node 3)">Tranquility</div>
+                                <div class="iss-module iss-module-cupola" data-module="Cupola">Cupola</div>
+                                <div class="iss-module iss-module-harmony" data-module="Harmony (Node 2)">Harmony</div>
+                                <div class="iss-module iss-module-zvezda" data-module="Zvezda">Zvezda</div>
+                                <div class="iss-module iss-module-rassvet" data-module="Rassvet">Rassvet</div>
+                                
+                                <!-- Connectors between modules -->
+                                <div class="iss-connector" style="top: 50%; left: 40%; width: 40px; height: 2px;"></div>
+                                <div class="iss-connector" style="top: 50%; left: 60%; width: 40px; height: 2px;"></div>
+                                <div class="iss-connector" style="top: 60%; left: 50%; width: 2px; height: 40px;"></div>
+                                <div class="iss-connector" style="top: 60%; left: 55%; width: 20px; height: 2px; transform: rotate(45deg);"></div>
+                                <div class="iss-connector" style="top: 50%; left: 75%; width: 40px; height: 2px;"></div>
+                                <div class="iss-connector" style="top: 50%; left: 25%; width: 40px; height: 2px;"></div>
+                                <div class="iss-connector" style="top: 40%; left: 20%; width: 2px; height: 20px;"></div>
+                            </div>
+                            
+                            <div class="module-info">
+                                <h4 class="module-name">Unity (Node 1)</h4>
+                                <p class="module-description">The first U.S. module of the ISS, connecting the Russian and American segments.</p>
+                            </div>
+                            
+                            <div class="module-navigation">
+                                <h4>CONNECTED MODULES:</h4>
+                                <div class="module-list">
+                                    <button class="module-button" data-module="Zarya (FGB)" data-description="The first component of the ISS to be launched, providing electrical power, storage, propulsion, and guidance.">
+                                        Zarya (FGB)
+                                    </button>
+                                    <button class="module-button" data-module="Tranquility (Node 3)" data-description="Houses life support systems, exercise equipment, and the Cupola observation module.">
+                                        Tranquility (Node 3)
+                                    </button>
+                                    <button class="module-button" data-module="Destiny Laboratory" data-description="The primary research laboratory for U.S. payloads, supporting a wide variety of experiments.">
+                                        Destiny Laboratory
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Planet Comparator -->
+                    <div id="planets-tab" class="tab-content">
+                        <h3><span class="feature-icon floating">🌍</span> Planet Comparator</h3>
+                        <p>Compare different features of planets in our solar system. Select planets and choose a comparison type.</p>
+                        
+                        <div class="visual-container">
+                            <div class="planet-selection">
+                                <h4>SELECT PLANETS (UP TO 3):</h4>
+                                <div class="planet-buttons">
+                                    <button class="planet-button" data-planet="mercury">
+                                        <span class="planet-icon mercury"></span>Mercury
+                                    </button>
+                                    <button class="planet-button" data-planet="venus">
+                                        <span class="planet-icon venus"></span>Venus
+                                    </button>
+                                    <button class="planet-button" data-planet="earth">
+                                        <span class="planet-icon earth"></span>Earth
+                                    </button>
+                                    <button class="planet-button" data-planet="mars">
+                                        <span class="planet-icon mars"></span>Mars
+                                    </button>
+                                    <button class="planet-button" data-planet="jupiter">
+                                        <span class="planet-icon jupiter"></span>Jupiter
+                                    </button>
+                                    <button class="planet-button" data-planet="saturn">
+                                        <span class="planet-icon saturn"></span>Saturn
+                                    </button>
+                                    <button class="planet-button" data-planet="uranus">
+                                        <span class="planet-icon uranus"></span>Uranus
+                                    </button>
+                                    <button class="planet-button" data-planet="neptune">
+                                        <span class="planet-icon neptune"></span>Neptune
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <div class="comparison-type">
+                                <h4>CHOOSE COMPARISON:</h4>
+                                <div>
+                                    <button class="comparison-button selected" data-type="diameter">Diameter</button>
+                                    <button class="comparison-button" data-type="distance">Distance from Sun</button>
+                                    <button class="comparison-button" data-type="day">Day Length</button>
+                                    <button class="comparison-button" data-type="year">Year Length</button>
+                                    <button class="comparison-button" data-type="gravity">Gravity</button>
+                                    <button class="comparison-button" data-type="temp">Temperature</button>
+                                    <button class="comparison-button" data-type="moons">Number of Moons</button>
+                                </div>
+                            </div>
+                            
+                            <div class="comparison-results">
+                                <!-- Results will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer<response clipped><NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.</NOTE>

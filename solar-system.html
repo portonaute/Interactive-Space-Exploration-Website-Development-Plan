@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System - Cosmic Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="stars-bg">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-blue-900 focus:text-white focus:z-50">
+        Skip to main content
+    </a>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">COSMIC EXPLORER</a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="solar-system.html" class="nav-link active">Solar System</a>
+                    <a href="history.html" class="nav-link">History</a>
+                    <a href="space-race.html" class="nav-link">Space Race</a>
+                    <a href="modern-space.html" class="nav-link">Modern Space</a>
+                    <a href="interactive.html" class="nav-link">Interactive</a>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <div class="container">
+                <h1 class="space-title">Our Solar System</h1>
+                <p class="space-subtitle">Explore the planets, moons, and other celestial bodies that make up our cosmic neighborhood.</p>
+            </div>
+        </section>
+
+        <section class="solar-system-overview">
+            <div class="container">
+                <h2 class="section-title">General Overview</h2>
+                
+                <div class="solar-system-animation">
+                    <div class="sun"></div>
+                    <div class="orbit mercury-orbit">
+                        <div class="planet mercury"></div>
+                    </div>
+                    <div class="orbit venus-orbit">
+                        <div class="planet venus"></div>
+                    </div>
+                    <div class="orbit earth-orbit">
+                        <div class="planet earth"></div>
+                    </div>
+                    <div class="orbit mars-orbit">
+                        <div class="planet mars"></div>
+                    </div>
+                    <div class="orbit jupiter-orbit">
+                        <div class="planet jupiter"></div>
+                    </div>
+                    <div class="orbit saturn-orbit">
+                        <div class="planet saturn">
+                            <div class="saturn-ring"></div>
+                        </div>
+                    </div>
+                    <div class="orbit uranus-orbit">
+                        <div class="planet uranus"></div>
+                    </div>
+                    <div class="orbit neptune-orbit">
+                        <div class="planet neptune"></div>
+                    </div>
+                </div>
+                
+                <div class="overview-text reveal">
+                    <p>Our solar system formed about 4.6 billion years ago from a dense cloud of interstellar gas and dust. The Sun contains 99.8% of the mass in our solar system, with the remaining 0.2% contained in the planets, moons, asteroids, comets, and other objects.</p>
+                    
+                    <p>The solar system consists of the Sun, eight planets, five officially recognized dwarf planets, at least 218 moons, and countless smaller objects like asteroids and comets. The four inner planets (Mercury, Venus, Earth, and Mars) are rocky terrestrial worlds, while the four outer planets (Jupiter, Saturn, Uranus, and Neptune) are gas giants.</p>
+                    
+                    <p>Beyond Neptune lies the Kuiper Belt, a region of icy bodies including the dwarf planet Pluto. Even further out is the Oort Cloud, a theoretical cloud of predominantly icy objects that may extend up to 100,000 astronomical units from the Sun.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="planet-profiles">
+            <div class="container">
+                <h2 class="section-title">Planet Profiles</h2>
+                <p class="section-subtitle">Learn about the unique characteristics of each planet in our solar system.</p>
+                
+                <div class="planet-selector">
+                    <button class="planet-select-btn active" data-planet="mercury">
+                        <span class="planet-icon mercury"></span>Mercury
+                    </button>
+                    <button class="planet-select-btn" data-planet="venus">
+                        <span class="planet-icon venus"></span>Venus
+                    </button>
+                    <button class="planet-select-btn" data-planet="earth">
+                        <span class="planet-icon earth"></span>Earth
+                    </button>
+                    <button class="planet-select-btn" data-planet="mars">
+                        <span class="planet-icon mars"></span>Mars
+                    </button>
+                    <button class="planet-select-btn" data-planet="jupiter">
+                        <span class="planet-icon jupiter"></span>Jupiter
+                    </button>
+                    <button class="planet-select-btn" data-planet="saturn">
+                        <span class="planet-icon saturn"></span>Saturn
+                    </button>
+                    <button class="planet-select-btn" data-planet="uranus">
+                        <span class="planet-icon uranus"></span>Uranus
+                    </button>
+                    <button class="planet-select-btn" data-planet="neptune">
+                        <span class="planet-icon neptune"></span>Neptune
+                    </button>
+                </div>
+                
+                <div class="planet-details">
+                    <div class="planet-detail active" id="mercury-detail">
+                        <div class="planet-visualization">
+                            <div class="planet-3d mercury-3d">
+                                <div class="planet-surface"></div>
+                                <div class="planet-shadow"></div>
+                            </div>
+                        </div>
+                        <div class="planet-info">
+                            <h3>Mercury</h3>
+                            <div class="planet-data">
+                                <div class="data-item">
+                                    <span class="data-label">Type:</span>
+                                    <span class="data-value">Terrestrial</span>
+                                </div>
+                                <div class="data-item">
+                                    <span class="data-label">Diameter:</span>
+                                    <span class="data-value">4,880 km</span>
+                                </div>
+                                <div class="data-item">
+                                    <span class="data-label">Distance from Sun:</span>
+                                    <span class="data-value">57.9 million km</span>
+                                </div>
+                                <div class="data-item">
+                                    <span class="data-label">Day Length:</span>
+                                    <span class="data-value">58.6 Earth days</span>
+                                </div>
+                                <div class="data-item">
+                                    <span class="data-label">Year Length:</span>
+                                    <span class="data-value">88 Earth days</span>
+                                </div>
+                                <div class="data-item">
+                                    <span class="data-label">Notable Features:</span>
+                                    <span class="data-value">Smallest planet, extreme temperature variations, heavily cratered surface</span>
+                                </div>
+                            </div>
+                            <div class="planet-fact">
+                                <span class="fact-icon">💡</span>
+                                <p>Mercury's surface resembles our Moon with numerous impact craters. It has no atmosphere to protect it from meteoroid impacts or to retain heat, causing extreme temperature variations from 430°C during the day to -180°C at night.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="planet-detail" id="venus-detail">
+                        <div class="planet-visualization">
+                            <div class="planet-3d venus-3d">
+                                <div class="planet-surface"></div>
+                                <div class="planet-atmosphere"></div>
+                                <div class="planet-shadow"></div>
+                            </div>
+                        </div>
+                        <div class="planet-info">
+                            <h3>Venus</h3>
+                            <div class="planet-data">
+                                <div class="data-item">
+                                    <span class="data-label">Type:</span>
+                                    <span class="data-value">Terrestrial</span>
+                                </div>
+                                <div class="data-item">
+                                    <span class="data-label">Diameter:</span>
+                                    <span class="data-value">12,104 km</span>
+                                </div>
+                                <div class="data-item">
+                                    <span class="data-label">Distance from Sun:</span>
+                                    <span class="data-value">108.2 million km</span>
+                                </div>
+                                <div class="data-item">
+                                    <span class="data-label">Day Length:</span>
+                                    <span class="data-value">243 Earth days</span>
+                                </div>
+                                <div class="data-item">
+                                    <span class="data-label">Year Length:</span>
+                                    <span class="data-value">225 Earth days</span>
+                                </div>
+                                <div class="data-item">
+                                    <span class="data-label">Notable Features:</span>
+                                    <span class="data-value">Hottest planet, thick atmosphere, retrograde rotation</span>
+                                </div>
+                            </div>
+                            <div class="planet-fact">
+                                <span class="fact-icon">💡</span>
+                                <p>Venus rotates in the opposite direction to most planets, meaning the Sun rises in the west and sets in the east. Its thick atmosphere of carbon dioxide traps heat in a runaway greenhouse effect, making it the hottest planet with surface temperatures of around 464°C.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="planet-detail" id="earth-detail">
+                        <div class="planet-visualization">
+                            <div class="planet-3d earth-3d">
+                                <div class="planet-surface"></div>
+                                <div class="planet-clouds"></div>
+                                <div class="planet-shadow"></div>
+                            </div>
+                        </div>
+                        <div class="planet-info">
+                            <h3>Earth</h3>
+                            <div class="planet-data">
+                                <div class="data-item">
+                                    <span class="data-label">Type:</span>
+                                    <span class="data-value">Terrestrial</span>
+                                </div>
+                                <div class="data-item">
+                                    <span class="data-label">Diameter:</span>
+                                    <span class="data-value">12,756 km</span>
+                                </div>
+                                <div class="data-item">
+                                    <span class="data-label">Distance from Sun:</span>
+                                    <span class="data-value">149.6 million km</span>
+                                </div>
+                                <div class="data-item">
+                                    <span class="data-label">Day Length:</span>
+                                    <span class="data-value">24 hours</span>
+                                </div>
+                                <div class="data-item">
+                                    <span class="data-label">Year Length:</span>
+                                    <span class="data-value">365.25 days</span>
+                                </div>
+                                <div class="data-item">
+                                    <span class="data-label">Notable Features:</span>
+                                    <span class="data-value">Only known planet with life, 71% water coverage, active geology</span>
+                                </div>
+                            </div>
+                            <div class="planet-fact">
+                                <span class="fact-icon">💡</span>
+                                <p>Earth is the only planet known to harbor life, thanks to its liquid water, oxygen-rich atmosphere, and protective magnetic field. It's the densest planet in our solar system and the only one not named after a god or goddess.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="planet-detail" id="mars-detail">
+                        <div class="planet-visualization">
+                            <div class="planet-3d mars-3d">
+                                <div class="planet-surface"></div>
+                                <div class="planet-poles"></div>
+                                <div class="planet-shadow"></div>
+                            </div>
+                        </div>
+                        <div class="planet-info">
+                            <h3>Mars</h3>
+                            <div class="planet-data">
+                                <div class="data-item">
+                                    <span class="data-label">Type:</span>
+                                    <span class="data-value">Terrestrial</span>
+                                </div>
+                                <div class="data-item">
+                                    <span class="data-label">Diameter:</span>
+                                    <span class="data-value">6,792 km</span>
+                                </div>
+                                <div class="data-item">
+                                    <span class="data-label">Distance from Sun:</span>
+                                    <span class="data-value">227.9 million km</span>
+                                </div>
+                                <div class="data-item">
+                   <response clipped><NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.</NOTE>

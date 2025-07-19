@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Explorer - Interactive Space Exploration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="stars-bg">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-blue-900 focus:text-white focus:z-50">
+        Skip to main content
+    </a>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">COSMIC EXPLORER</a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="solar-system.html" class="nav-link">Solar System</a>
+                    <a href="history.html" class="nav-link">History</a>
+                    <a href="space-race.html" class="nav-link">Space Race</a>
+                    <a href="modern-space.html" class="nav-link">Modern Space</a>
+                    <a href="interactive.html" class="nav-link">Interactive</a>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <div class="container">
+                <h1 class="space-title">Explore the Cosmos</h1>
+                <p class="space-subtitle">An immersive journey through our solar system and the history of space exploration.</p>
+                <div class="hero-buttons">
+                    <a href="solar-system.html" class="hero-button">Solar System</a>
+                    <a href="history.html" class="hero-button">Space History</a>
+                    <a href="interactive.html" class="hero-button">Interactive Features</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro-section">
+            <div class="container">
+                <h2 class="section-title">Welcome to Cosmic Explorer</h2>
+                <div class="content-grid">
+                    <div class="text-content">
+                        <p>Cosmic Explorer is your gateway to the wonders of space exploration. From the planets of our solar system to the history of human spaceflight, we offer an immersive, educational experience for space enthusiasts of all ages.</p>
+                        <p>Our interactive features allow you to engage directly with space concepts, from controlling a virtual Mars rover to comparing the physical properties of different planets. Explore the site to discover the fascinating story of humanity's journey to the stars.</p>
+                    </div>
+                    <div class="visual-content">
+                        <div class="planet-orbit">
+                            <div class="sun"></div>
+                            <div class="orbit">
+                                <div class="planet"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-sections">
+            <div class="container">
+                <h2 class="section-title">Featured Sections</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h3>Solar System</h3>
+                        <p>Explore the planets, moons, and other celestial bodies that make up our cosmic neighborhood. Learn about each planet's unique characteristics and the forces that shape our solar system.</p>
+                        <a href="solar-system.html" class="nav-button">Explore Solar System</a>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>Space Exploration History</h3>
+                        <p>Discover the fascinating journey of human space exploration, from ancient astronomy to modern space missions. Explore our interactive timeline of key milestones in humanity's quest to reach the stars.</p>
+                        <a href="history.html" class="nav-button">Discover History</a>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>US-Soviet Space Race</h3>
+                        <p>Delve into the Cold War competition that propelled humanity into the Space Age. Learn about the political motivations, technological achievements, and lasting legacy of this pivotal era.</p>
+                        <a href="space-race.html" class="nav-button">Explore Space Race</a>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <h3>Modern Space Technology</h3>
+                        <p>Explore the cutting-edge technologies shaping our future in space. From reusable rockets to Mars rovers, discover how modern innovations are opening new frontiers in space exploration.</p>
+                        <a href="modern-space.html" class="nav-button">Discover Technology</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="interactive-preview">
+            <div class="container">
+                <h2 class="section-title">Interactive Features</h2>
+                <p class="section-subtitle">Engage with our interactive tools to deepen your understanding of space exploration.</p>
+                
+                <div class="content-grid">
+                    <div class="text-content">
+                        <h3>🛰️ Satellite Orbit Viewer</h3>
+                        <p>Adjust parameters to see how satellites orbit Earth at different altitudes and inclinations.</p>
+                        
+                        <h3>🚀 Mars Rover Simulator</h3>
+                        <p>Control a virtual rover on the Martian surface using directional buttons.</p>
+                        
+                        <h3>🏢 ISS Virtual Tour</h3>
+                        <p>Explore the International Space Station by navigating between its various modules.</p>
+                        
+                        <h3>🌍 Planet Comparator</h3>
+                        <p>Compare different features of planets in our solar system, from size to atmospheric composition.</p>
+                        
+                        <a href="interactive.html" class="nav-button">Try Interactive Features</a>
+                    </div>
+                    
+                    <div class="visual-content">
+                        <div class="interactive-preview-image">
+                            <div class="preview-overlay">
+                                <span>Interactive Dashboard</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Cosmic Explorer | Interactive Space Exploration Website</p>
+            <p>Developed with HTML, CSS, and JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

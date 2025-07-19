@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Exploration History - Cosmic Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="stars-bg">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:p-4 focus:bg-blue-900 focus:text-white focus:z-50">
+        Skip to main content
+    </a>
+
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">COSMIC EXPLORER</a>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="solar-system.html" class="nav-link">Solar System</a>
+                    <a href="history.html" class="nav-link active">History</a>
+                    <a href="space-race.html" class="nav-link">Space Race</a>
+                    <a href="modern-space.html" class="nav-link">Modern Space</a>
+                    <a href="interactive.html" class="nav-link">Interactive</a>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <div class="container">
+                <h1 class="space-title">Space Exploration History</h1>
+                <p class="space-subtitle">From ancient stargazing to modern space missions, discover humanity's journey to the stars.</p>
+            </div>
+        </section>
+
+        <section class="timeline-section">
+            <div class="container">
+                <h2 class="section-title">Interactive Timeline</h2>
+                <p class="section-subtitle">Explore key events in space exploration history by selecting different eras.</p>
+                
+                <div class="timeline-navigation">
+                    <button class="era-btn active" data-era="ancient">
+                        <div class="era-icon ancient-icon floating"></div>
+                        Ancient Astronomy
+                    </button>
+                    <button class="era-btn" data-era="renaissance">
+                        <div class="era-icon renaissance-icon floating"></div>
+                        Renaissance
+                    </button>
+                    <button class="era-btn" data-era="early-modern">
+                        <div class="era-icon early-modern-icon floating"></div>
+                        Early Modern
+                    </button>
+                    <button class="era-btn" data-era="space-race">
+                        <div class="era-icon space-race-icon floating"></div>
+                        Space Race
+                    </button>
+                    <button class="era-btn" data-era="shuttle">
+                        <div class="era-icon shuttle-icon floating"></div>
+                        Space Shuttle Era
+                    </button>
+                    <button class="era-btn" data-era="modern">
+                        <div class="era-icon modern-icon floating"></div>
+                        Modern Era
+                    </button>
+                </div>
+                
+                <div class="timeline-container">
+                    <!-- Ancient Astronomy Era -->
+                    <div class="timeline-era active" id="ancient-era">
+                        <div class="timeline">
+                            <div class="timeline-event left reveal">
+                                <div class="event-date">~3000 BCE</div>
+                                <div class="event-content">
+                                    <h3>Stonehenge Construction Begins</h3>
+                                    <p>Early astronomical observatory used to mark solstices and equinoxes.</p>
+                                    <div class="event-icon stonehenge-icon pulse"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-event right reveal">
+                                <div class="event-date">~1600 BCE</div>
+                                <div class="event-content">
+                                    <h3>Babylonian Star Catalogs</h3>
+                                    <p>First systematic observations of the night sky recorded on clay tablets.</p>
+                                    <div class="event-icon babylonian-icon pulse"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-event left reveal">
+                                <div class="event-date">~350 BCE</div>
+                                <div class="event-content">
+                                    <h3>Aristotle's Geocentric Model</h3>
+                                    <p>Proposed that Earth was the center of the universe with celestial bodies orbiting around it.</p>
+                                    <div class="event-icon geocentric-icon pulse"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-event right reveal">
+                                <div class="event-date">~150 CE</div>
+                                <div class="event-content">
+                                    <h3>Ptolemy's Almagest</h3>
+                                    <p>Comprehensive astronomical treatise that became the definitive work on astronomy for over a millennium.</p>
+                                    <div class="event-icon almagest-icon pulse"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-event left reveal">
+                                <div class="event-date">~800 CE</div>
+                                <div class="event-content">
+                                    <h3>Islamic Golden Age Astronomy</h3>
+                                    <p>Arab astronomers make significant advances in observational astronomy and mathematical techniques.</p>
+                                    <div class="event-icon islamic-astronomy-icon pulse"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Renaissance Era -->
+                    <div class="timeline-era" id="renaissance-era">
+                        <div class="timeline">
+                            <div class="timeline-event left reveal">
+                                <div class="event-date">1543</div>
+                                <div class="event-content">
+                                    <h3>Copernicus' Heliocentric Model</h3>
+                                    <p>Published "On the Revolutions of the Celestial Spheres," proposing that the Sun, not Earth, was at the center of the universe.</p>
+                                    <div class="event-icon copernicus-icon pulse"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-event right reveal">
+                                <div class="event-date">1609</div>
+                                <div class="event-content">
+                                    <h3>Kepler's Laws of Planetary Motion</h3>
+                                    <p>Described how planets move in elliptical orbits with the Sun at one focus.</p>
+                                    <div class="event-icon kepler-icon pulse"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-event left reveal">
+                                <div class="event-date">1610</div>
+                                <div class="event-content">
+                                    <h3>Galileo's Telescope Observations</h3>
+                                    <p>Discovered Jupiter's four largest moons and observed the phases of Venus, supporting the heliocentric model.</p>
+                                    <div class="event-icon galileo-icon pulse"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-event right reveal">
+                                <div class="event-date">1668</div>
+                                <div class="event-content">
+                                    <h3>Newton's Reflecting Telescope</h3>
+                                    <p>Invented the first practical reflecting telescope, revolutionizing astronomical observation.</p>
+                                    <div class="event-icon newton-icon pulse"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-event left reveal">
+                                <div class="event-date">1687</div>
+                                <div class="event-content">
+                                    <h3>Newton's Law of Universal Gravitation</h3>
+                                    <p>Published in "Principia," explaining the motion of planets and providing a unified theory of gravity.</p>
+                                    <div class="event-icon gravity-icon pulse"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Early Modern Era -->
+                    <div class="timeline-era" id="early-modern-era">
+                        <div class="timeline">
+                            <div class="timeline-event left reveal">
+                                <div class="event-date">1903</div>
+                                <div class="event-content">
+                                    <h3>Wright Brothers' First Flight</h3>
+                                    <p>Achieved the first powered, controlled, and sustained flight of a heavier-than-air aircraft.</p>
+                                    <div class="event-icon wright-icon pulse"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-event right reveal">
+                                <div class="event-date">1926</div>
+                                <div class="event-content">
+                                    <h3>Goddard's Liquid-Fueled Rocket</h3>
+                                    <p>Launched the first liquid-fueled rocket, demonstrating the technology that would enable space travel.</p>
+                                    <div class="event-icon goddard-icon pulse"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-event left reveal">
+                                <div class="event-date">1942</div>
+                                <div class="event-content">
+                                    <h3>V-2 Rocket First Launch</h3>
+                                    <p>German scientists developed the first ballistic missile, which became the first human-made object to reach space.</p>
+                                    <div class="event-icon v2-icon pulse"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-event right reveal">
+                                <div class="event-date">1947</div>
+                                <div class="event-content">
+                                    <h3>Sound Barrier Broken</h3>
+                                    <p>Chuck Yeager became the first person to exceed the speed of sound in level flight in the Bell X-1.</p>
+                                    <div class="event-icon sound-barrier-icon pulse"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-event left reveal">
+                                <div class="event-date">1952</div>
+                                <div class="event-content">
+                                    <h3>International Council of Scientific Unions</h3>
+                                    <p>Proposed the International Geophysical Year (1957-1958), which would lead to the first satellites.</p>
+                                    <div class="event-icon icsu-icon pulse"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Space Race Era -->
+                    <div class="timeline-era" id="space-race-era">
+                        <div class="timeline">
+                            <div class="timeline-event left reveal">
+                                <div class="event-date">1957</div>
+                                <div class="event-content">
+                                    <h3>Sputnik 1 Launch</h3>
+                                    <p>Soviet Union launched the first artificial satellite, beginning the Space Race.</p>
+                                    <div class="event-icon sputnik-icon pulse"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-event right reveal">
+                                <div class="event-date">1961</div>
+                                <div class="event-content">
+                                    <h3>Yuri Gagarin's Spaceflight</h3>
+                                    <p>First human to journey into outer space, completing one orbit around Earth.</p>
+                                    <div class="event-icon gagarin-icon pulse"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-event left reveal">
+                                <div class="event-date">1962</div>
+                                <div class="event-content">
+                                    <h3>John Glenn Orbits Earth</h3>
+                                    <p>First American to orbit Earth, completing three orbits in Friendship 7.</p>
+                                    <div class="event-icon glenn-icon pulse"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-event right reveal">
+                                <div class="event-date">1969</div>
+                                <div class="event-content">
+                                    <h3>Apollo 11 Moon Landing</h3>
+                                    <p>Neil Armstrong and Buzz Aldrin became the first humans to walk on the Moon.</p>
+                                    <div class="event-icon apollo-icon pulse"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-event left reveal">
+                                <div class="event-date">1975</div>
+                  <response clipped><NOTE>To save on context only part of this file has been shown to you. You should retry this tool after you have searched inside the file with `grep -n` in order to find the line numbers of what you are looking for.</NOTE>

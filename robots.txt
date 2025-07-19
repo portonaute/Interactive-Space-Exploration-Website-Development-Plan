@@ -1,0 +1,5 @@
+// robots.txt file for Cosmic Explorer space exploration website
+User-agent: *
+Allow: /
+
+Sitemap: https://cosmic-explorer.example.com/sitemap.xml
